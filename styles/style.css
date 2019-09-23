@@ -1,0 +1,30 @@
+p, h1, h2 {
+    color: rebeccapurple;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.h3_class {
+    color: aquamarine;
+}
+
+.img_test {
+    height: 300px;
+    width: 50%;
+}
+
+html {
+    background-color: #CCCCCC;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#result {
+    color: red;
+}
