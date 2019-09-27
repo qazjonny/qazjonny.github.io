@@ -28,3 +28,12 @@ html {
 #result {
     color: red;
 }
+
+#btn_random_eat{
+    background: aquamarine;
+}
+
+#result_random_eat {
+    color: blue;
+    font-size: 20px;
+}
