@@ -1,5 +1,5 @@
 let mapResults = new Map();
-let totalCount = 99;
+let totalCount = 29;
 let resultRandomEat = document.getElementById("result_random_done");
 resultRandomEat.textContent = "这是结果(共" + totalCount + "次)";
 
