@@ -36,7 +36,40 @@ html {
     font-size: 18px;
 }
 
+#btn_random_bet_banker{
+    background: darkred;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    color: white;
+}
+#btn_random_bet_player{
+    background: darkblue;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    color: white;
+}
+
+#btn_random_bet_done{
+    background: black;
+    height: 100px;
+    width: 400px;
+    font-size: 18px;
+    color: white;
+}
+
 #result_random_done {
     color: blue;
+    font-size: 20px;
+}
+
+#result_random_bet_player {
+    color: darkblue;
+    font-size: 20px;
+}
+
+#result_random_bet_banker{
+    color: darkred;
     font-size: 20px;
 }
