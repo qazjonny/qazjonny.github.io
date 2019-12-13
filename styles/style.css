@@ -15,7 +15,7 @@ a:hover {
 }
 
 .img_test {
-    height: 300px;
+    height: 50%;
     width: 50%;
 }
 
@@ -29,11 +29,14 @@ html {
     color: red;
 }
 
-#btn_random_eat{
-    background: aquamarine;
+#btn_random_done{
+    background: red;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
 }
 
-#result_random_eat {
+#result_random_done {
     color: blue;
     font-size: 20px;
 }

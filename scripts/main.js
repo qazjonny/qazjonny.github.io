@@ -1,38 +1,12 @@
-let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
-
-document.getElementById("btn_addition").onclick = function () {
-    let num1 = document.getElementById("input_num1").value;
-    let num2 = document.getElementById("input_num2").value;
-    let result = testAddition(num1, num2);
-    let resultElement = document.getElementById("result");
-    if (isNaN(result)) {
-        resultElement.textContent = "结果为空，请重新输入";
-    } else {
-        resultElement.textContent = result;
-    }
-};
-
-document.getElementById("btn_subtraction").onclick = function () {
-    let num1 = document.getElementById("input_num1").value;
-    let num2 = document.getElementById("input_num2").value;
-    let result = testSubtraction(num1, num2);
-    let resultElement = document.getElementById("result");
-    if (isNaN(result)) {
-        resultElement.textContent = "结果为空，请重新输入";
-    } else {
-        resultElement.textContent = result;
-    }
-};
 let mapResults = new Map();
-let totalCount = 29;
-let resultRandomEat = document.getElementById("result_random_eat");
-resultRandomEat.textContent = "这是计算结果(共" + totalCount + "次)";
+let totalCount = 99;
+let resultRandomEat = document.getElementById("result_random_done");
+resultRandomEat.textContent = "这是结果(共" + totalCount + "次)";
 
-document.getElementById("btn_random_eat").onclick = function () {
-    if (totalCount <= 0) return
+document.getElementById("btn_random_done").onclick = function () {
+    if (totalCount <= 0) return;
     --totalCount;
-    let randomEats = ["柴火鸡", "烤肉", "随便"];
+    let randomEats = ["去", "不去"];
     let num = randomNum(0, randomEats.length - 1);
     let name = randomEats[num];
 
@@ -42,18 +16,10 @@ document.getElementById("btn_random_eat").onclick = function () {
 
     let showResults = "(还剩" + totalCount + "次)结果 :  ";
     for (let entry of mapResults) {
-        showResults += entry + " ---- ";
+        showResults += entry + "           ";
     }
     resultRandomEat.textContent = showResults;
 };
-
-function testAddition(num1, num2) {
-    return parseInt(num1) + parseInt(num2);
-}
-
-function testSubtraction(num1, num2) {
-    return parseInt(num1) - parseInt(num2);
-}
 
 
 //生成从minNum到maxNum的随机数
